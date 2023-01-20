@@ -25,14 +25,9 @@ function Nav() {
       <div className="nav_contents">
         <img
           className="nav_logo"
-          src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png"
-          alt=""
+          src="https://cdn.cookielaw.org/logos/dd6b162f-1a32-456a-9cfe-897231c7763c/4345ea78-053c-46d2-b11e-09adaef973dc/Netflix_Logo_PMS.png"
+          alt="Netflix"
         />
-
-        {/* https://cdn-icons-png.flaticon.com/512/732/732228.png */}
-
-        {/*
-        https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png */}
 
         <img
           className="nav_avatar"
