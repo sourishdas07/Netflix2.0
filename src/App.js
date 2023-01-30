@@ -6,6 +6,7 @@ import LoginScreen from "./LoginScreen";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
+import ProfileScreen from "./ProfileScreen";
 
 function App() {
 
@@ -37,8 +38,9 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/" element={<LoginScreen />} /> 
-        <Route path="/" element={<HomeScreen />} />
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/homescreen" element={<HomeScreen />} />
+        <Route path="/profile" element={<ProfileScreen />} />
       </Routes>
     </div>
   );
