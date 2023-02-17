@@ -10,7 +10,7 @@ import ProfileScreen from "./ProfileScreen";
 
 function App() {
 
-  // const user = useSelector(selectUser);
+  //const user = useSelector(selectUser);
   const user = null;
   const dispatch = useDispatch();
 
