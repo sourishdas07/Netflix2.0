@@ -8,6 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfileScreen from "./ProfileScreen";
 
+
 function App() {
 
   //const user = useSelector(selectUser);
@@ -38,7 +39,9 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        {!user ? <LoginScreen /> : <Route path="/" element={<HomeScreen />} />}
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/" element={<HomeScreen />} />
+        <Route path="/profile" element={<ProfileScreen />} />
       </Routes>
     </div>
   );
@@ -47,11 +50,7 @@ function App() {
 export default App;
 
 /*
-<Routes>
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/homescreen" element={<HomeScreen />} />
-        <Route path="/profile" element={<ProfileScreen />} />
-      </Routes>
+
 */
 
 // the "app" class so it operates like a funtcional app

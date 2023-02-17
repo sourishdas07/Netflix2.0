@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './LoginScreen.css'
 import './SignUpScreen'
 import SignUpScreen from './SignUpScreen';
+import { Link } from "react-router-dom";
 
 function LoginScreen() {
 
@@ -22,9 +23,11 @@ function LoginScreen() {
           alt=""
         />
 
-        <button 
+        <button
           onClick={() => setSignIn(true)}
-          className="loginScreen__button">Sign In
+          className="loginScreen__button"
+        >
+          Sign In 
         </button>
 
         <div className="loginScreen__gradient" />
@@ -33,29 +36,32 @@ function LoginScreen() {
       <div className="loginScreen_body">
         {signIn ? (
           <SignUpScreen />
-        ): 
+        ) : (
+          <>
+            <h1>Unlimited films, TV programmes and more.</h1>
+            <h2>Watch anywhere. Cancel at any time.</h2>
+            <h3>
+              Ready to watch? Enter your email to create or restart your
+              membership.
+            </h3>
 
-        <>
-          <h1>Unlimited films, TV programmes and more.</h1>
-          <h2>Watch anywhere. Cancel at any time.</h2>
-          <h3>
-            Ready to watch? Enter your email to create or restart your
-            membership.
-          </h3>
+            <div className="loginScreen_input">
+              <form>
+                <input type="email" placeholder="Email Address" />
+              </form>
 
-          <div className="loginScreen_input">
-            <form>
-              <input type="email" placeholder="Email Address" />
-            </form>
-            <button 
-              onClick={() => setSignIn(true)}
-              className="loginScreen_getStarted"> GET STARTED 
-            </button>
-          </div>
-      
-        </>
-        }
-
+              <Link to="/">
+                <button
+                  onClick={() => setSignIn(true)}
+                  className="loginScreen_getStarted"
+                >
+                  {" "}
+                  GET STARTED
+                </button>
+              </Link>
+            </div>
+          </>
+        )}
       </div>
     </div>
   );
