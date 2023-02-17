@@ -38,9 +38,7 @@ function App() {
   return (
     <div className="app">
       <Routes>
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/homescreen" element={<HomeScreen />} />
-        <Route path="/profile" element={<ProfileScreen />} />
+        {!user ? <LoginScreen /> : <Route path="/" element={<HomeScreen />} />}
       </Routes>
     </div>
   );
@@ -50,12 +48,10 @@ export default App;
 
 /*
 <Routes>
-        {!user ? (
-          <LoginScreen />
-        ): (
-        <Route path="/" element={<HomeScreen />} />
-      )}
-</Routes>
+        <Route path="/login" element={<LoginScreen />} />
+        <Route path="/homescreen" element={<HomeScreen />} />
+        <Route path="/profile" element={<ProfileScreen />} />
+      </Routes>
 */
 
 // the "app" class so it operates like a funtcional app
