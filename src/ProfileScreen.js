@@ -1,11 +1,13 @@
 //import { userEvent } from '@testing-library/user-event/dist/types/setup';
-import React from 'react'
+import { React, useEffect, useState } from "react";
+import db from "./firebase";
 import { auth } from './firebase';
 import Nav from "./Nav";
-
+import PlansScreen from './PlansScreen';
 import "./ProfileScreen.css";
 
 function ProfileScreen() {
+
   return (
     <div className="profileScreen">
       <Nav />
@@ -21,8 +23,19 @@ function ProfileScreen() {
             <h2>Hello!</h2>
             <div className="profileScreen_plans">
               <h3>Plans</h3>
-              <button onClick={() => auth.signOut}
-                className="profileScreen_signOut">Sign Out
+
+              <div className="plansScreen_plan">
+                <div className="plansScreen_info">
+                  <h5>test</h5>
+                  <h6>testing</h6>
+                </div>
+              </div>
+
+              <button
+                onClick={() => auth.signOut}
+                className="profileScreen_signOut"
+              >
+                Sign Out
               </button>
             </div>
           </div>

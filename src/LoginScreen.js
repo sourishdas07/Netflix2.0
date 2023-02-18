@@ -50,7 +50,7 @@ function LoginScreen() {
                 <input type="email" placeholder="Email Address" />
               </form>
 
-              <Link to="/">
+              
                 <button
                   onClick={() => setSignIn(true)}
                   className="loginScreen_getStarted"
@@ -58,7 +58,7 @@ function LoginScreen() {
                   {" "}
                   GET STARTED
                 </button>
-              </Link>
+              
             </div>
           </>
         )}
