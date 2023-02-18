@@ -7,22 +7,23 @@ function PlansScreen() {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        db.collection("products").where("active", "==", true)
+        db.collection("products")
         .gdt()
-        .then(querySnapshot => {
+        .then((querySnapshot) => {
             const products = {};
-            querySnapshot.forEach(async productDoc => {
+            querySnapshot.forEach(async (productDoc) => {
                 products[productDoc.id] = productDoc.data();
-                const priceSnap = await productDoc.ref.collection('prices').get();
+                const priceSnap = await productDoc.ref.collection
+                ("prices").get();
                 priceSnap.docs.forEach(price => {
                     products[productDoc.id].prices = {
                         priceId: price.id,
-                        priceData: price.data()
-                    }
-                })
+                        priceData: price.data(),
+                    };
+                });
             });
+            setProducts(products);
         });
-        setProducts(products);
     }, []);
 
     console.log(products);
@@ -43,5 +44,8 @@ function PlansScreen() {
     </div>
   );
 }
+
+
+// .where("active", "==", true) for db.collection line
 
 export default PlansScreen
