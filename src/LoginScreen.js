@@ -23,11 +23,8 @@ function LoginScreen() {
           alt=""
         />
 
-        <button
-          onClick={() => setSignIn(true)}
-          className="loginScreen__button"
-        >
-          Sign In 
+        <button onClick={() => setSignIn(true)} className="loginScreen__button">
+          Sign In
         </button>
 
         <div className="loginScreen__gradient" />
@@ -38,28 +35,15 @@ function LoginScreen() {
           <SignUpScreen />
         ) : (
           <>
-            <h1>Unlimited films, TV programmes and more.</h1>
+            <h1>Unlimited Films, TV Programmes and More.</h1>
             <h2>Watch anywhere. Cancel at any time.</h2>
-            <h3>
-              Ready to watch? Enter your email to create or restart your
-              membership.
-            </h3>
+            <h3>Not ready to create an account?</h3>
 
-            <div className="loginScreen_input">
-              <form>
-                <input type="email" placeholder="Email Address" />
-              </form>
-
-              
-                <button
-                  onClick={() => setSignIn(true)}
-                  className="loginScreen_getStarted"
-                >
-                  {" "}
-                  GET STARTED
-                </button>
-              
-            </div>
+            <Link to="/">
+              <button className="loginScreen_getStarted">
+                CHECK IT OUT
+              </button>
+            </Link>
           </>
         )}
       </div>
