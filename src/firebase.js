@@ -3,7 +3,10 @@ import "firebase/compat/auth";
 import "firebase/compat/firestore";
 import "firebase/compat/database";
 import "firebase/compat/storage";
-// import { initializeApp } from ""
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+
 
 const firebaseConfig = {
   apiKey: "AIzaSyAdYhKH3pm9z0L9DIvBGucF7MFejF5cXW4",
@@ -15,9 +18,7 @@ const firebaseConfig = {
   measurementId: "G-G4W8ZVTQ12",
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig);
-const db = firebaseApp.firestore();
-const auth = firebase.auth();
-
-export { auth };
-export default db;
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const auth = getAuth(app);
+export default app;

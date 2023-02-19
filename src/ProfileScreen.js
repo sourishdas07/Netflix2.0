@@ -24,7 +24,6 @@ function ProfileScreen() {
             <div className="profileScreen_plans">
               <h3>Plans</h3>
 
-             <PlansScreen />
 
               <div className="plansScreen_plan">
                 <div className="plansScreen_info">

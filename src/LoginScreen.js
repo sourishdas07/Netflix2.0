@@ -31,21 +31,17 @@ function LoginScreen() {
       </div>
 
       <div className="loginScreen_body">
-        {signIn ? (
-          <SignUpScreen />
-        ) : (
-          <>
-            <h1>Unlimited Films, TV Programmes and More.</h1>
-            <h2>Watch anywhere. Cancel at any time.</h2>
-            <h3>Not ready to create an account?</h3>
 
-            <Link to="/">
-              <button className="loginScreen_getStarted">
-                CHECK IT OUT
-              </button>
-            </Link>
-          </>
-        )}
+        <h1>Unlimited Films, TV Programmes and More.</h1>
+        <h2>Watch anywhere. Cancel at any time.</h2>
+        <h3>Not ready to create an account?</h3>
+
+          <Link to="/">
+            <button className="loginScreen_getStarted">
+              CHECK IT OUT
+            </button>
+          </Link>
+
       </div>
     </div>
   );

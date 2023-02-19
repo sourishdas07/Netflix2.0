@@ -25,7 +25,7 @@ export const incrementAsync = createAsyncThunk(
 
 
 export const userSlice = createSlice({
-  name: "user",
+  name: 'user',
   initialState: {
     user: null,
   },
