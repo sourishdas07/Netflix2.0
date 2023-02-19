@@ -1,12 +1,12 @@
 .banner {
     position: relative;
-    height: 50rem;
+    height: 40rem;
     color: white;
     object-fit: contain;
 }
 
 .banner_contents {
-    margin-left: 30px;
+    margin-left: 60px;
     padding-top: 140px;
     height: 190px;
 }
@@ -14,6 +14,7 @@
 .banner__title {
     font-size: 3rem;
     font-weight: 800;
+    margin-bottom: 1rem;
 }
 
 .banner__description {
