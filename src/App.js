@@ -40,21 +40,20 @@ function App() {
 
   return (
     <div className="app">
-      <Routes>
-        <Route path="/login" element={<LoginScreen />} />
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="/profile" element={<ProfileScreen />} />
-
-        <Route path="/testing" element={<SignUpScreen />} />
-      </Routes>
+      {!user ? (
+        <Routes>
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/" element={<HomeScreen />} />
+        </Routes>
+      ) : (
+        <Routes>
+          <Route path="/login" element={<LoginScreen />} />
+          <Route path="/" element={<HomeScreen />} />
+          <Route path="/profile" element={<ProfileScreen />} />
+        </Routes>
+      )}
     </div>
   );
 }
 
 export default App;
-
-/*
-
-*/
-
-// the "app" class so it operates like a funtcional app
