@@ -8,7 +8,6 @@ import Nav from "./Nav";
 import PlansScreen from './PlansScreen';
 import "./ProfileScreen.css";
 import { Link } from "react-router-dom";
-import Row from "./Row";
 
 function ProfileScreen() {
 

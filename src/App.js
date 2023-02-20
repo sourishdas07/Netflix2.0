@@ -7,7 +7,7 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfileScreen from "./ProfileScreen";
-import PlansScreen from "./PlansScreen";
+import ProfileNoAcc from "./ProfileNoAcc";
 
 function App() {
   const user = useSelector(selectUser);
@@ -39,13 +39,13 @@ function App() {
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/" element={<HomeScreen />} />
+          <Route path="/profile" element={<ProfileNoAcc />} />
         </Routes>
       ) : (
         <Routes>
           <Route path="/login" element={<LoginScreen />} />
           <Route path="/" element={<HomeScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
-          <Route path="/plans" element={<PlansScreen />} />
         </Routes>
       )}
     </div>
