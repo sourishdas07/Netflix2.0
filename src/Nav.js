@@ -30,7 +30,7 @@ function Nav() {
       {/* `nav ${show && "nav_black"}` */}
 
       <div className="nav_contents">
-        <Link to="/">
+        <Link to="/home">
           <img
             onClick={() => Navigate("/homescreen")} // fix this
             className="nav_logo"
