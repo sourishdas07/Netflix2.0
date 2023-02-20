@@ -37,11 +37,16 @@
     padding-left: 20px;
 }
 
+.profileScreen_plans > h3 {
+    padding: 15 px;
+}
+
 .profileScreen_signOut {
     padding: 10px 20px;
     font-size: 1rem;
     margin-top: 5%;
     width: 100%;
+    color: white;
     background-color: #e50914;
     font-weight: 600;
     cursor: pointer;

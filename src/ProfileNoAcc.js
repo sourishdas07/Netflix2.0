@@ -21,7 +21,7 @@ function ProfileNoAcc() {
             <div className="profileScreen_details">
               <h2>Hello!</h2>
               <div className="profileScreen_plans">
-                <h3>Create an Account to Access Account</h3>
+                <h3>Create an Account to Access Features</h3>
 
 
                 <Link to="/">
@@ -29,7 +29,7 @@ function ProfileNoAcc() {
                     onClick={() => auth.signOut}
                     className="profileScreen_signOut"
                   >
-                    Sign In
+                    Register
                   </button>
                 </Link>
 
