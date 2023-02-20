@@ -1,6 +1,4 @@
 import { React, useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { selectUser } from "./features/counter/userSlice";
 import db from "./firebase";
 import { auth } from "./firebase";
 import Nav from "./Nav";
@@ -26,7 +24,7 @@ function ProfileNoAcc() {
                 <h3>Create an Account to Access Account</h3>
 
 
-                <Link to="/login">
+                <Link to="/">
                   <button
                     onClick={() => auth.signOut}
                     className="profileScreen_signOut"

@@ -81,7 +81,4 @@ function PlansScreen() {
 }
 
 
-// .where("active", "==", true) for db.collection line
-
-
-export default PlansScreen
+export default PlansScreen;

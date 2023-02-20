@@ -37,14 +37,14 @@ function App() {
     <div className="app">
       {!user ? (
         <Routes>
-          <Route path="/login" element={<LoginScreen />} />
-          <Route path="/" element={<HomeScreen />} />
+          <Route path="/" element={<LoginScreen />} />
+          <Route path="/home" element={<HomeScreen />} />
           <Route path="/profile" element={<ProfileNoAcc />} />
         </Routes>
       ) : (
         <Routes>
-          <Route path="/login" element={<LoginScreen />} />
-          <Route path="/" element={<HomeScreen />} />
+          <Route path="/" element={<LoginScreen />} />
+          <Route path="/home" element={<HomeScreen />} />
           <Route path="/profile" element={<ProfileScreen />} />
         </Routes>
       )}

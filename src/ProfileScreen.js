@@ -9,11 +9,10 @@ import PlansScreen from './PlansScreen';
 import "./ProfileScreen.css";
 import { Link } from "react-router-dom";
 
+
 function ProfileScreen() {
 
   const user = useSelector(selectUser);
-
-
 
   return (
     <div className="profileScreen">
@@ -31,10 +30,9 @@ function ProfileScreen() {
             <h2>Hello!</h2>
             <div className="profileScreen_plans">
               <h3>Plans</h3>
-
               <PlansScreen />
 
-              <Link to="/login">
+              <Link to="/">
                 <button
                   onClick={() => auth.signOut}
                   className="profileScreen_signOut"
@@ -42,6 +40,7 @@ function ProfileScreen() {
                   Sign Out
                 </button>
               </Link>
+              
             </div>
           </div>
         </div>
