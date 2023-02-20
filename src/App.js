@@ -8,9 +8,6 @@ import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfileScreen from "./ProfileScreen";
 
-import SignUpScreen from "./SignUpScreen";
-
-
 
 function App() {
 

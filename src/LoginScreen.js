@@ -39,7 +39,7 @@ function LoginScreen() {
             <h2>Watch anywhere. Cancel at any time.</h2>
             <h3>Not ready to create an account?</h3>
 
-            <Link to="/home">
+            <Link to="/">
               <button className="loginScreen_getStarted">CHECK IT OUT</button>
             </Link>
           </>

@@ -20,10 +20,9 @@ function ProfileScreen() {
             alt=""
           />
           <div className="profileScreen_details">
-            <h2>Hello!</h2>
+            <h2>Hello</h2>
             <div className="profileScreen_plans">
               <h3>Plans</h3>
-
 
               <div className="plansScreen_plan">
                 <div className="plansScreen_info">
@@ -48,4 +47,4 @@ function ProfileScreen() {
 
 // <h2>{userEvent.email}</h2>;  under profile_screen_details
 
-export default ProfileScreen
+export default ProfileScreen;
