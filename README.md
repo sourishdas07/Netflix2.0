@@ -2,4 +2,4 @@
 
 https://netflix-clone-final-6c74e.web.app/
 
-<h4>Note that the live app is not yet fully updated</h4>
+<h4>Note that to access the full features of the app you must create an account</h4>
