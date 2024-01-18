@@ -1,4 +1,4 @@
-<h1 align="center">Visit Netflix2.0</h1>
+<h1 align="center">Netflix2.0</h1>
 
 <h4 align="center">Note that to access the full features of the app you must create an account</h4>
 
